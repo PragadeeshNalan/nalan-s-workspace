@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  float i,n;
+  cout<<"enter 1st element:\n";
+  cin>>i;
+  cout<<"\nenter 2nd element:\n";
+  cin>>n;
+  cout<<"\nsum of two numbers:\n"<<i+n;
+  cout<<"\ndifference of two numbers:\n"<<i-n;
+  cout<<"\ndivison of two numbers:\n"<<i/n;
+  cout<<"\nmultiplication of two numbers:\n"<<i*n;
+}
