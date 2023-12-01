@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i,n,j,m;
+  cout<<"enter number:\n";
+  cin>>m;
+  for(i=1;i<=12;i++)
+  {
+    j=i*m;
+    cout<<j<<"\n";
+  }
+}
