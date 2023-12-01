@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i,n;
+  cout<<"enter a number:\n";
+  cin>>i;
+  cout<<"enter a number:\n";
+  cin>>n;
+  string x=(i==n) ? "equal" :"not equal";
+  cout<<"the numbers are "<<x;
+  
+}
