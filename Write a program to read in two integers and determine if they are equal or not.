@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,i,n;
+  cout<<"enter 1st element:\n";
+  cin>>i;
+  cout<<"\nenter 2nd element:\n";
+  cin>>n;
+  if (i==n)
+  {
+  cout<<"\nthe numbers are equal";
+  }
+  else
+  {
+  cout<<"\nthe numbers are not equal";
+  } 
+}
