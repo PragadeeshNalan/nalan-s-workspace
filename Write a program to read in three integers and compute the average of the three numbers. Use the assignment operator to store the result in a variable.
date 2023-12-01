@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,i,n;
+  cout<<"enter 1st element:\n";
+  cin>>i;
+  cout<<"\nenter 2nd element:\n";
+  cin>>n;
+  cout<<"\nenter 3rd element:\n";
+  cin>>a;
+  cout<<"\nthe average is:"<<(i+n+a)/3;
+}
