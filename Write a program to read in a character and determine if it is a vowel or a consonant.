@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  char i;
+  cout<<"enter a character:\n";
+  cin>>i;
+  if (i=='a'||i=='e'||i=='i'||i=='o'||i=='u')
+  {
+    cout<<"the character is a vowel";
+  }
+  if (i=='A'||i=='E'||i=='I'||i=='O'||i=='U')
+  {
+    cout<<"the character is a vowel";
+  }
+  else
+  {
+    cout<<"the character is a consonant";
+  }
+}
