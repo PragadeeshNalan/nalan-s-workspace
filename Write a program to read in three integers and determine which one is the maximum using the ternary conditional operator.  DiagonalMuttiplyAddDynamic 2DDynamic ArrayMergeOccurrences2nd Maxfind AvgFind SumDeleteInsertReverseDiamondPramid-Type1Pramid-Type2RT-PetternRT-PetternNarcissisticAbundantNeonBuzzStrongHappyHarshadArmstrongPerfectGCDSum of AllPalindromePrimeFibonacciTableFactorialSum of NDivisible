@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+int i,n,a,b,c;
+cout<<"enter any three numbers:\n";
+cin>>a>>b>>c;
+string r = (a>b) ?"a" : "b";
+  cout<<r<<" is greater than the other number"<<"\n";
+string d = (c>a & c>b) ?"c" : "x";
+  cout<<"the greatest number is "<<d;
+}
