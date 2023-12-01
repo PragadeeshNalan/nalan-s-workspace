@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i;
+  cout<<"enter a number:\n";
+  cin>>i;
+  string n=(i%3==0) ? "divisible" :"not divisible";
+  cout<<"Its "<<n<<" by three";
+  
+}
