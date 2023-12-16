@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+class rectangle
+{
+  public:
+  int l;
+  int b;
+  int x;
+  rectangle(int l,int b)
+  {
+    cout<<"enter length: "<<l<<"cm\n";
+    cout<<"enter breath: "<<b<<"cm\n";
+    x=l*b;
+  }
+  ~rectangle()
+  {
+    cout<<x<<"cm is the area of the rectangle";
+  }
+};
+int main()
+{
+  int l,b,x;
+  cout<<"enter length and breath:"<<"\n";
+  cin>>l>>b;
+  rectangle (l,b);
+}
