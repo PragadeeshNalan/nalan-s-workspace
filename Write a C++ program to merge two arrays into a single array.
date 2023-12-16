@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[]={1,2,3,4,5},b[]={6,7,8,9,10};
+  int c=sizeof(a)/sizeof(a[0]);
+  int d=sizeof(b)/sizeof(b[0]);
+  int i;
+  int e[100];
+  for(i=0;i<c;i++)
+    e[i]=a[i];
+  for(i=0;i<d;i++)
+    e[i+c]=b[i];
+  int j=c+d;
+  for(i=0;i<j;i++)
+    cout<<e[i]<<" ";
+}
