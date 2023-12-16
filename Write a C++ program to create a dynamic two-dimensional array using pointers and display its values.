@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int r,c;
+    cout<<"Enter the number of rows: \n";
+    cin>>r;
+    cout<<"Enter the number of columns: \n";
+    cin>>c;
+  int i,j;
+    int **d=new int *[r];
+    for(i=0; i<r;i++)
+    {
+        d[i]=new int[c];
+    }
+    for( i = 0; i < r; ++i) {
+        for(j = 0; j < c; ++j) {
+            cout << "Element"<<i+1<<","<<j+1<<": \n";
+            cin >> d[i][j];
+        }
+    }
+    cout << "Values in the matrix:\n";
+    for(i = 0; i < r; ++i) {
+        for(j = 0; j < c; ++j) {
+            cout << d[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
