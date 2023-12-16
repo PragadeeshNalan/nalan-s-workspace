@@ -1,0 +1,28 @@
+#include <iostream>  
+#include <stdio.h>  
+using namespace std;
+//int n,i;
+class student
+{
+  public:
+  int n;
+  int i;
+student( int i,int n)
+{
+  cout<<"the height of the student is "<<n<<"cm\n";
+  cout<<"the weight of the student is "<<i<<"kgs\n";
+}
+~student()
+{
+  cout<<"These are the details of student";
+}
+};
+int main()
+{
+  
+  int n,i;
+  cout<<"enter the height of the student:\n";
+  cout<<"enter the weight of the student:\n";
+  cin>>n>>i;
+  student n1(n,i);
+}
