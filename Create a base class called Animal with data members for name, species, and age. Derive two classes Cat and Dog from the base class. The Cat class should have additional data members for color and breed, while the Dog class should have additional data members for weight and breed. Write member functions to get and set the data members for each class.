@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+class animal
+{
+  char name[20];
+  char species[60];
+  int age;
+  public:
+  void set()
+  {
+    cin>>name>>species>>age;
+  }
+void dis()
+{
+  cout<<"name:"<<name<<endl;
+  cout<<"species:"<<species<<endl;
+  cout<<"age:"<<age<<endl;
+}
+};
+class cat:public animal
+ {
+ char color[20];
+ char breed[80];
+ public:
+ void accept()
+ {
+ cin>>color>>breed;
+ }
+ void display()
+ {
+ cout<<"enter color:"<<color<<endl;
+ cout<<"enter breed:"<<breed<<endl;
+ }
+};
+class dog:public animal
+{
+char breed[20];
+int weight;
+public:
+void accept()
+{
+cin>>breed>>weight;
+}
+void display()
+{
+cout<<"breed:"<<breed<<endl;
+cout<<"weight:"<<weight<<endl;
+}
+};
+int main()
+{
+  cat c;
+  c.set();
+  c.dis();
+  c.accept();
+  c.display();
+  dog d;
+  d.set();
+  d.dis();
+  d.accept();
+  d.display();
+}
