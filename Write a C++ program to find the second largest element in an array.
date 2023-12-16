@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int m, a[100];
+    cout<<"Enter array size: ";
+    cin>>m;
+    cout << "Enter array elements:\n";
+    for (int i = 0; i < m; ++i) {
+        cout << "Element "<<i+1<<":\n";
+        cin >> a[i];
+    }
+    int l = -100000000;
+    int sl = -1000000;
+    for (int i = 0; i < m; ++i) {
+        if (a[i] > l) {
+            sl = l;
+            l = a[i];
+        } else if (a[i] > sl && a[i] < l) {
+            sl = a[i];
+        }
+    }
+
+    if (sl == -1000000000) {
+        cout << "No second largest element.\n";
+    } else {
+        cout << "Second largest element: " << sl << endl;
+    }
+
+    return 0;
+}
