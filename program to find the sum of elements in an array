@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[]={1,2,3},sum,i,l;
+  l=sizeof(a)/sizeof(a[1]);
+  for(i=0;i<l;i++)
+    sum=sum+a[i];
+  cout<<"the Sum is "<<sum<<endl;
+  return 0;
+}
