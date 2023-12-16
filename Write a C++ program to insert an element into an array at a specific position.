@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[]={1,2,3,4,5};
+  int c=sizeof(a)/sizeof(a[0]);
+  int i,g,f;
+  int e[100];
+  cout<<"Enter the element to be inserted\n";
+    cin>>f;
+  cout<<"Enter the position to be inserted\n";
+    cin>>g;
+  for(i=0;i<g-1;i++)
+    e[i]=a[i];
+  e[g-1]=f;
+  for(i=g;i<=c+1;i++)
+    e[i]=a[i-1];
+  int j=c+1;
+  cout<<"After adding : ";
+  for(i=0;i<j;i++)
+    cout<<e[i]<<" ";
+}
