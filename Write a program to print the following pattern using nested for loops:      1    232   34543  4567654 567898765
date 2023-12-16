@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,i,j,k,s,c,l=0,m=1;
+  cout<<"Enter number";
+  cin>>a;
+  for(i=0;i<=a;i++)
+  {
+    for(s=0;s<=a+10-i+l;s++)
+    {
+      cout<<" ";
+  
+    }
+    l--;
+    for(j=1;j<=i;j++)
+    {
+      cout<<m<<" ";
+      m++;
+    }
+     m--;
+    for(j=i-1;j>0;j--)
+    {
+         m--;
+      cout<<m<<" ";
+    }
+    m++;
+    cout<<endl;
+  }
+}
