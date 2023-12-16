@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+void pfun(char*name)
+{
+  cout<<"this executes after calling";
+}
+int main()
+{
+  void (*pmfun)(char*);
+    pmfun=pfun;
+  char s[30];
+  cout<<"enter your name:\n";
+  cin>>s;
+  pmfun(s);
+  cout<<","<<s;
+  return 0;
+}
