@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[]={1,2,3,4,5};
+  int n,i,b[100],e;
+  e=sizeof(a)/sizeof(a[0]);
+  cout<<"Enter the element"<<endl;
+  cin>>n;
+   for(i=0;i<e;i++)
+      if(n==a[i])
+      {
+        cout<<"The element "<<a[i]<<" is in position "<<i+1;
+        break;
+      }
+}
