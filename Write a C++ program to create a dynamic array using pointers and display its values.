@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the size of the array: \n";
+    cin >> n;
+    int *d = new int[n];
+    cout << "Enter " << n << " integers:\n";
+    for (int i = 0; i < n; ++i) {
+        cout << "Element " << i + 1 << ": \n";
+        cin >> d[i];
+    }
+    cout << "Values in the dynamic array:\n";
+    for (int i = 0; i < n; ++i) {
+        cout << d[i] << " ";
+    }
+    return 0;
+}
