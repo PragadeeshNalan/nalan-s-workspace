@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<iostream>
+#include<string>
+using namespace std;
+string i,n;
+class book
+{
+  public:
+  book()
+  {
+    cout<<n<<" \n";
+  }
+  ~book()
+  {
+    cout<<"These are the details of books";
+  }
+};
+int main ()
+{
+  cout<<"enter the name of the book: \n";
+  getline(cin,n);
+  book n;
+}
